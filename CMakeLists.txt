@@ -3,6 +3,7 @@ project(libseek_thermal_driver)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
+set(CMAKE_CXX_STANDARD_LIBRARIES "-lseek")
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -125,9 +126,9 @@ include_directories(
 
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
+#add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/libseek_thermal_driver.cpp
-# )
+#)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
